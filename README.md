@@ -79,3 +79,11 @@ s2idle [deep]
 100% / (%/hr rate) = 55.93 hours in sleep from a full charge
 
 ~15 seconds from lid open to lock screen prompt
+
+
+# Possible Issues with Experiment
+
+* I'm assuming that battery drain speed is uniform across charge percentages
+  (drains the same at 100% as it does at 30%)
+* My timing was pretty casual, didn't let it sleep for a long time and didn't
+  sleep for the same amount of time for each run.
