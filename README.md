@@ -16,6 +16,8 @@ lid?
 
 # The Experiment
 
+My laptop is a first-generation Framwork laptop with an Intel i7-1165G7 CPU.
+
 I wrote a little Python script, `battery_log.py`, which grabs battery stats
 from /sys:
 
