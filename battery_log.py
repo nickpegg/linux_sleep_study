@@ -18,11 +18,24 @@ def main() -> None:
     )
     args = arg_parser.parse_args()
 
+    last_chg = 0.0
+    chg = 0.0
+    t = time.time()
     while True:
+        last_chg = chg
+        last_t = t
+
         now = datetime.now()
         chg = get_charge_pct()
         pwr = get_power_usage()
-        print(f"{now} {chg:.2f}% {pwr:.2f}W")
+        t = time.time()
+
+        if last_chg != 0.0:
+            chg_rate_m = (chg - last_chg) / (t - last_t) * 60
+        else:
+            chg_rate_m = 0.0
+
+        print(f"{now} {chg:.2f}% {pwr:.2f}W {chg_rate_m:.4f}%/min")
 
         time.sleep(args.interval)
 
