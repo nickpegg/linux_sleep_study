@@ -16,7 +16,18 @@ lid?
 
 # The Experiment
 
-My laptop is a first-generation Framwork laptop with an Intel i7-1165G7 CPU.
+## The Machine
+
+My laptop is a first-generation Framwork laptop.
+
+* Framework mainboard with Intel i7-1165G7 CPU
+* 16GB DDR4 3200 MHz RAM (single stick)
+* Samsung 970 EVO 1TB M.2 SSD
+
+I was running a standard system load; Firefox with a bunch of tabs open, a
+bunch of terminals open for coding, etc.
+
+## The Process
 
 I wrote a little Python script, `battery_log.py`, which grabs battery stats
 from /sys:
