@@ -81,7 +81,19 @@ s2idle [deep]
 ~15 seconds from lid open to lock screen prompt
 
 
-# Possible Issues with Experiment
+# Conclusions
+
+Deep sleep is about 23% better on battery usage than s2idle, _but_ with the 15
+seconds it takes from me opening my laptop lid to it being ready to log in,
+it's not really worth it if I'm opening and closing the lid often (like when
+I'm using it around the house).
+
+It might be worth it if I'm traveling, where it would be closed for a long time
+between usage, but I might as well just hibernate it at that point. As a matter
+of fact, I timed how long it takes to come out of hibernation and it only takes
+**16 seconds** from off to login prompt (with 16GB of RAM).
+
+## Possible Issues with Experiment
 
 * I'm assuming that battery drain speed is uniform across charge percentages
   (drains the same at 100% as it does at 30%)
